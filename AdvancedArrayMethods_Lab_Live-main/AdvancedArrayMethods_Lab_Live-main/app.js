@@ -166,7 +166,7 @@ console.log('vegetarianFood from problemOne', vegetarianFood)
 //3. Create a function that will return all dishes with the cuisine type of
 //  "Italian" and a serving size greater than 5.
 //Filter
-
+ 
     let italianCuisine = dishes.filter(function(dish){
         if(dish.cuisine === ('Italian') && (dish.servings > 5)) {
             return true;
@@ -175,20 +175,27 @@ console.log('vegetarianFood from problemOne', vegetarianFood)
     console.log(italianCuisine)
        
 
-    
-
-
-
-
-//4. Create a function that will return only dishes whose id number matches their serving count.
+    //4. Create a function that will return only dishes whose id number matches
+//  their serving count.
 //Filter
+let sameIdAndServings = dishes.filter(function(dish) {
+    if (dish.id === dish.servings) { 
+    }
+    return true;
+});
+console.log(sameIdAndServings)
+// STILL NEED TO WORK ON NUMBER 4
 
-
-
-//5. Create a function that will return only dishes whose serving count is even.
+//5. Create a function that will return only dishes whose serving count is
+//  even.
 //Filter
-
-
+let evenServings = dishes.filter(function(serving) {
+    if (serving % 2 === 0){
+    return true;
+    }
+});
+console.log(evenServings);
+// STILL NEED TO WORK ON NUMBER 5
 
 //6. Create a function that will return dishes whose ingredients array INCLUDES "chickpea".
 //Hint: You do not want to check the array's indexes to find out what the array INCLUDES.

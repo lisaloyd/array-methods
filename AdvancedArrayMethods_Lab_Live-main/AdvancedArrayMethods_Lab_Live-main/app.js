@@ -235,10 +235,14 @@ console.log(cuisineTypes)
 // cuisine type appended to the start of the dish's name. Ie, 
 // ["Italian Pizza", "Italian Spaghetti", ...]
 //Map 
+let newDishName = dishes.map(function(dish) {
+    return (dish.cuisine+ " " +dish.name);
+})
+console.log(newDishName);
 
-
-
-//10. Create a function that will use advanced array methods on the 'dishes' array and return the result ["Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"]
+//10. Create a function that will use advanced array methods on the 
+// 'dishes' array and return the result 
+// ["Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"]
 
 
 

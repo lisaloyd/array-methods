@@ -157,11 +157,14 @@ function problemOne(){
 let vegetarianFood = problemOne();
 console.log('vegetarianFood from problemOne', vegetarianFood)
 
-//2. Create a function that will prompt the user to enter a cuisine type and then return all dishes that match that type
+//2. Create a function that will prompt the user to enter a cuisine type
+//  and then return all dishes that match that type
 //Filter
-
-    
-
+    userCuisineType = prompt('Enter a cuisine type' );
+    let result = dishes.filter(function(dish, userCuisineType) {
+        return userCuisineType;
+    });
+    console.log(result)
 
 //3. Create a function that will return all dishes with the cuisine type of
 //  "Italian" and a serving size greater than 5.
@@ -175,16 +178,16 @@ console.log('vegetarianFood from problemOne', vegetarianFood)
     console.log(italianCuisine)
        
 
-    //4. Create a function that will return only dishes whose id number matches
-//  their serving count.
+    //4. Create a function that will return only dishes whose id number 
+    // matches their serving count.
 //Filter
 let sameIdAndServings = dishes.filter(function(dish) {
-    if (dish.id === dish.servings) { 
+    return (dish.id === dish.servings); { 
     }
-    return true;
+    
 });
 console.log(sameIdAndServings)
-// STILL NEED TO WORK ON NUMBER 4
+
 
 //5. Create a function that will return only dishes whose serving count is
 //  even.
@@ -197,16 +200,30 @@ let evenServings = dishes.filter(function(serving) {
 console.log(evenServings);
 // STILL NEED TO WORK ON NUMBER 5
 
-//6. Create a function that will return dishes whose ingredients array INCLUDES "chickpea".
-//Hint: You do not want to check the array's indexes to find out what the array INCLUDES.
-//Double Hint: Research 'javascript does array include item'
+//6. Create a function that will return dishes whose ingredients array 
+// INCLUDES "chickpea". Hint: You do not want to check the array's indexes
+// to find out what the array INCLUDES.Double Hint: Research 'javascript  
+// does array include item'
 //Filter
 
+let chickpeaDishes = dishes.filter(function(dish) {
+    if (dishes.includes("chickpea")); {
+    return true;
+}
+})
+console.log(chickpeaDishes);
+// STILL NEED TO WORK ON NUMBER 6
 
-
-//7. Create a function that will prompt the user to type the name of one ingredient. Then use a filter to find all the dishes whose ingredients array INCLUDES that ingredient. Return the new array.
+//7. Create a function that will prompt the user to 
+// type the name of one ingredient. Then use a filter to 
+// find all the dishes whose ingredients array INCLUDES 
+// that ingredient. Return the new array.
 //Filter
+let oneIngredient = prompt("Type the name of one ingredient. ")
+    
+if (oneIngredient = dishes) {
 
+    }
 
 
 //8a. Create a function that will return an array of the string cuisine types. Ie, ["Italian", "Italian", "Mexican", ...]

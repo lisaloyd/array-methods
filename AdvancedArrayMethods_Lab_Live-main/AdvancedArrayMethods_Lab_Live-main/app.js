@@ -205,9 +205,8 @@ console.log(evenServings);
 //Filter
 
 let chickpeaDishes = dishes.filter(function(dish) {
-    if (dishes.includes("chickpea")); {
-    return true;
-}
+    return (dishes.includes("chickpea")); {
+    }
 })
 console.log(chickpeaDishes);
 // STILL NEED TO WORK ON NUMBER 6
@@ -224,12 +223,17 @@ if (oneIngredient = dishes) {
     }
 
 
-//8a. Create a function that will return an array of the string cuisine types. Ie, ["Italian", "Italian", "Mexican", ...]
+//8a. Create a function that will return an array of the string cuisine 
+// types. Ie, ["Italian", "Italian", "Mexican", ...]
 //Map
+let cuisineTypes = dishes.map(function(dish) {
+    return (dish.cuisine);
+})
+console.log(cuisineTypes)
 
-
-
-//9. Create a function that will return an array of strings, with the cuisine type appended to the start of the dish's name. Ie, ["Italian Pizza", "Italian Spaghetti", ...]
+//9. Create a function that will return an array of strings, with the 
+// cuisine type appended to the start of the dish's name. Ie, 
+// ["Italian Pizza", "Italian Spaghetti", ...]
 //Map 
 
 

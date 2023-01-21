@@ -184,7 +184,6 @@ console.log('vegetarianFood from problemOne', vegetarianFood)
 let sameIdAndServings = dishes.filter(function(dish) {
     return (dish.id === dish.servings); { 
     }
-    
 });
 console.log(sameIdAndServings)
 
@@ -192,13 +191,12 @@ console.log(sameIdAndServings)
 //5. Create a function that will return only dishes whose serving count is
 //  even.
 //Filter
-let evenServings = dishes.filter(function(serving) {
-    if (serving % 2 === 0){
-    return true;
+let evenServings = dishes.filter(function(dish) {
+    return (dish.servings % 2 === 0); {        
     }
 });
 console.log(evenServings);
-// STILL NEED TO WORK ON NUMBER 5
+
 
 //6. Create a function that will return dishes whose ingredients array 
 // INCLUDES "chickpea". Hint: You do not want to check the array's indexes

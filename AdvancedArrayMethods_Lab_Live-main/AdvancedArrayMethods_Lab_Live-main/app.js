@@ -243,8 +243,14 @@ console.log(newDishName);
 //10. Create a function that will use advanced array methods on the 
 // 'dishes' array and return the result 
 // ["Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"]
+let vegetarianDishes = dishes.filter(function(dish) {
+    return (dish.cuisine === ('Vegetarian') && (dish.name));
+});
+console.log(vegetarianDishes)
 
 
+// if (dish.cuisine === ('Vegetarian') && (dish.servings > 5)) {
+//         return true;
 
 
 

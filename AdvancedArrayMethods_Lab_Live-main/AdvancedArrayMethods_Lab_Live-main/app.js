@@ -160,7 +160,7 @@ console.log('vegetarianFood from problemOne', vegetarianFood)
 //2. Create a function that will prompt the user to enter a cuisine type
 //  and then return all dishes that match that type
 //Filter
-    userCuisineType = prompt('Enter a cuisine type' );
+    let userCuisineType = prompt('Enter a cuisine type' );
     let result = dishes.filter(function(dish, userCuisineType) {
         return userCuisineType;
     });
@@ -209,18 +209,20 @@ let chickpeaDishes = dishes.filter(function(dish) {
     }
 })
 console.log(chickpeaDishes);
-// STILL NEED TO WORK ON NUMBER 6
+
 
 //7. Create a function that will prompt the user to 
 // type the name of one ingredient. Then use a filter to 
 // find all the dishes whose ingredients array INCLUDES 
 // that ingredient. Return the new array.
 //Filter
-let oneIngredient = prompt("Type the name of one ingredient. ")
-    
-if (oneIngredient = dishes) {
-
+let userResponse = prompt("Type the name of one ingredient. ");
+let ingredientDishes = dishes.filter(function(dish) {
+    return (dishes.includes(userResponse)); {
     }
+})
+console.log(ingredientDishes)   
+
 
 
 //8a. Create a function that will return an array of the string cuisine 
@@ -247,11 +249,6 @@ let vegetarianDishes = dishes.filter(function(dish) {
     return (dish.cuisine === ('Vegetarian') && (dish.name));
 });
 console.log(vegetarianDishes)
-
-
-// if (dish.cuisine === ('Vegetarian') && (dish.servings > 5)) {
-//         return true;
-
 
 
 //BONUS
